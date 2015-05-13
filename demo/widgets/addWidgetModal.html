@@ -1,0 +1,70 @@
+<script type="text/ng-template" id="widgets/addWidgetModal.html">
+    <div class="modal-header">
+        <h3 class="modal-title">Add Order</h3>
+    </div>
+    <form novalidate name="addWidgetForm">
+        <div class="modal-body">
+            <div id="orderNoContainer">
+                <label for="orderNo">Order No <span class="requiredField" style="color:red;">*</span></label></br>
+                <input ng-model-options="{ updateOn: 'blur' }" name="orderNo" data-ng-model="widget.orderNo" type="text"
+                       id="orderNo"
+                       class="form-control" required/>
+
+                <div class="errorContainer">
+                    <span style="color:red"
+                          ng-show="addWidgetForm.orderNo.$dirty  && addWidgetForm.orderNo.$invalid">
+                    <span class="errorText" ng-if="addWidgetForm.orderNo.$error.required">Please Don't Leave This Field Empty</span></span>
+                </div>
+
+            </div>
+            <div id="quantityContainer">
+                <label for="quantity">Quantity <span class="requiredField" style="color:red;">*</span></label></br>
+                <input ng-model-options="{ updateOn: 'blur' }" name="quantity" data-ng-model="widget.quantity"
+                       type="text" id="quantity"
+                       class="form-control" required/>
+
+                <div class="errorContainer">
+                    <span style="color:red"
+                          ng-show="addWidgetForm.quantity.$dirty  && addWidgetForm.quantity.$invalid">
+                    <span class="errorText" ng-if="addWidgetForm.quantity.$error.required">Please Don't Leave This Field Empty</span></span>
+                </div>
+
+            </div>
+            <div id="locationContainer">
+                <label for="location">Location <span class="requiredField" style="color:red;">*</span></label></br>
+                <input ng-model-options="{ updateOn: 'blur' }" name="location" data-ng-model="widget.locality"
+                       type="text" id="location"
+                       class="form-control" required/>
+
+                <div class="errorContainer">
+                    <span style="color:red"
+                          ng-show="addWidgetForm.location.$dirty  && addWidgetForm.location.$invalid">
+                    <span class="errorText" ng-if="addWidgetForm.location.$error.required">Please Don't Leave This Field Empty</span></span>
+                </div>
+
+            </div>
+            <div id="billContainer">
+                <label for="bill">Bill <span class="requiredField" style="color:red;">*</span></label></br>
+                <input ng-model-options="{ updateOn: 'blur' }" name="bill" data-ng-model="widget.Bill" type="text"
+                       id="bill"
+                       class="form-control" required/>
+
+                <div class="errorContainer">
+                    <span style="color:red"
+                          ng-show="addWidgetForm.bill.$dirty  && addWidgetForm.bill.$invalid">
+                    <span class="errorText" ng-if="addWidgetForm.bill.$error.required">Please Don't Leave This Field Empty</span></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" ng-click="createWidget()">
+                Save
+            </button>
+            <button class="btn btn-warning" ng-click="cancel()">Cancel
+            </button>
+        </div>
+    </form>
+
+
+</script>

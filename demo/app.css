@@ -1,0 +1,313 @@
+/* app css stylesheet */
+
+/* app css stylesheet */
+
+body {
+  margin-top: 50px;
+  background-color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+a:hover, a:active, a:focus {
+  outline: 0;
+}
+
+.font-openbold {
+  font-family: 'OpenSansBold';
+}
+
+.font-opensanLight {
+  font-family: 'OpenSansLight';
+}
+
+.txt999 {
+  color: #999;
+}
+
+.txt888 {
+  color: #888;
+}
+
+.txtfff {
+  color: #fff;
+}
+.fnt-size8 {
+  font-size: 8px;
+}
+
+.fnt-size10{
+  font-size: 10px;
+}
+.fnt-size11{
+  font-size: 11px;
+}
+.fnt-size12{
+  font-size: 12px;
+}
+
+.fnt-size13 {
+  font-size: 13px;
+}
+
+.fnt-size12 {
+  font-size: 12px !important;
+}
+
+.fnt-size14 {
+  font-size: 14px;
+}
+
+.fnt-size16 {
+  font-size: 16px !important;
+}
+
+.fnt-size18 {
+  font-size: 18px !important;
+}
+
+.fnt-size22 {
+  font-size: 22px !important;
+}
+.fnt-size20 {
+  font-size: 20px !important;
+}
+
+.whiteBg {
+  background: #fff;
+}
+.whiteColor {
+  color: #fff
+}
+
+.rcorners {
+  border-radius: 4px
+}
+
+.greenb5 {
+  border-top: 5px solid #22a966;
+}
+
+.addmarginB20 {
+  margin-bottom: 20px !important;
+}
+
+.addmarginL10 {
+  margin-left: 10px !important;
+}
+
+.addmarginB25 {
+  margin-bottom: 25px;
+}
+
+.remMarginT {
+  margin-top: 0 !important;
+}
+
+.fntwhtNml {
+  font-weight: normal;
+}
+
+.rempaddingL {
+  padding-left: 0 !important;
+}
+
+.rempaddingB {
+  padding-bottom: 0 !important;
+}
+
+.remMarginB {
+  margin-bottom: 0 !important;
+}
+
+.addpaddingB5 {
+  padding-bottom: 5px !important;
+}
+
+.addpaddingT5 {
+  padding-top: 5px;
+}
+
+.addpaddingT10 {
+  padding-top: 5px;
+}
+
+.addMarginT40 {
+  margin-top: 40px;
+}
+
+.padding20px {
+  padding: 20px
+}
+
+::-webkit-input-placeholder {
+  color: #b6b6b6;
+  font-family: Helvetica Neue, Helvetica, Arial;
+}
+
+::-moz-placeholder {
+  color: #b6b6b6;
+  font-family: Helvetica Neue, Helvetica, Arial;
+}
+
+/* firefox 19+ */
+:-ms-input-placeholder {
+  color: #b6b6b6;
+  font-family: Helvetica Neue, Helvetica, Arial;
+}
+
+/* ie */
+input:-moz-placeholder {
+  color: #b6b6b6;
+  font-family: Helvetica Neue, Helvetica, Arial
+}
+
+.greenBg {
+  background: #49b680;
+  border-radius: 4px;
+}
+
+#wrapper {
+  padding-left: 0;
+}
+
+#page-wrapper {
+  width: 100%;
+  padding: 0;
+  background-color: #e6e6e6;
+}
+
+.mainConatiner {
+  padding: 15px 0px 30px 0px;
+}
+
+.loginContainer {
+  padding: 0px 0px 30px 0;
+}
+
+.huge {
+  font-size: 50px;
+  line-height: normal;
+}
+
+#page-wrapper {
+  min-height: 700px
+}
+
+.navbar-default {
+  background-color: white;
+  box-shadow:2px 2px 5px 0 rgba(0, 0, 0, 0.25);
+  border-bottom: 0px;
+}
+
+.navbar-brand {
+  padding: 5px 10px;
+  margin-left: -20px;
+}
+
+.navbar-header {
+  height: 50px;
+  padding: 0 20px;
+  font-size: 18px;
+  line-height: 77px;
+  background-color: #fff;
+  z-index: 99999;
+}
+
+.notiyCount {
+  position: absolute;
+  top: 18px;
+  right: 11px;
+  background: #4dd08f;
+}
+
+.colorLines .colorCol {
+  height: 6px;
+  width: 25%;
+  float: left;
+}
+
+.color-one {
+  background-color: #22a966;
+}
+
+.color-two {
+  background-color: #eb5836;
+}
+
+.color-three {
+  background-color: #f2c230;
+}
+
+.color-four {
+  background-color: #1ebdd5;
+}
+
+footer {
+  background: #fff;
+}
+
+footer .copyrightContent {
+  height: 70px;
+  line-height: 25px;
+  background-color: #333233;
+
+
+}
+
+footer .copyrightContent p {
+  color:#ffffff;
+  margin: 0;
+}
+/*Large resolution screens */
+@media (min-width:1367px)  {
+  #page-wrapper {
+    min-height: 900px;
+  }
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+  background-color:#2369a6 ;
+  color:#ffffff;
+}
+.navbar-right{
+  margin-right: 0px !important;
+}
+
+#dashboardContainer .widgetContainer{
+  list-style: none;
+}
+.widget{
+  background-color: #ffffff;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow:2px 2px 5px 0 rgba(0, 0, 0, 0.25);
+  margin-bottom: 15px;
+}
+.widget .widgetHeader{
+  background-color: #ff348b;
+  color:#ffffff;
+  font-size: large;
+}
+.widget .widgetAttr{
+  padding: 3px 10px;
+
+}
+.widget .widgetBody{
+  padding-top: 15px;
+  min-height: 150px;
+}
+.widget .widgetBody .attr{
+  font-weight: bold;
+}
+.widget .widgetFooter{
+  background-color: #ffeaea;
+
+}
+
+.widget .widgetFooter .toolOptions{
+  margin-right: 15px;
+  padding: 3px 5px;
+}
+
+

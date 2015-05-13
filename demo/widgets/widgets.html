@@ -1,0 +1,70 @@
+<div id='page-wrapper'>
+    <div class="mainConatiner">
+        <div class="container-fluid">
+
+            <div class="col-sm-12">
+                <div class="header clearfix" style="margin-bottom: 15px;">
+                  <div class="pull-left"><h2>Orders</h2></div>
+
+                    <div class="pull-right">
+                        <input style="margin-top: 20px;" class="btn btn-primary" ng-click="addWidget()" type="button" value="Add Order">
+                    </div>
+                </div>
+                <ul id="dashboardContainer" ui-sortable ng-model="items">
+
+                    <li class="col-sm-3 widgetContainer" ng-repeat="item in items">
+                        <div class="widget">
+                            <div class="widgetHeader clearfix">
+                                Order No #{{item.orderNo}}
+                                <span style="margin-right: 15px;padding: 3px;" title="Cancel order" class="pull-right fa  fa-cog fa-spin"></span>
+                            </div>
+                            <div class="widgetBody">
+                                <div class="widgetAttr clearfix">
+                                    <span class="pull-left attr">
+                                     Quantity
+                                    </span>
+                                    <span class="pull-right">
+                                    {{item.quantity}}
+                                    </span>
+
+                                </div>
+                                <div class="widgetAttr clearfix">
+                                    <span class="pull-left attr">
+                                    Locality
+                                    </span>
+                                    <span class="pull-right">
+                                        {{item.locality}}
+                                    </span>
+
+                                </div>
+                                <div class="widgetAttr clearfix">
+                                   <span class="pull-left attr">
+                                   Bill
+                                   </span>
+                                   <span class="pull-right">
+                                       <span class="fa fa-inr"></span> {{item.Bill}}
+                                   </span>
+
+                                </div>
+
+
+                            </div>
+                            <div class="widgetFooter clearfix">
+                             <span class="toolOptions pull-right">
+                                 <span ng-click="editWidget(item.orderNo)" title="Edit this order" class="fa fa-lg fa-edit"></span>
+                                 <span ng-click="removeWidget(item.orderNo)" title="Cancel order" class="fa fa-lg fa-remove"></span>
+                             </span>
+                            </div>
+                        </div>
+                    </li>
+
+
+                </ul>
+                <div ng-if="!items.length">
+                    No Item Found
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#/widgets"><img alt="Widgets" src="./assets/images/logo.png" height="40"></a>
+
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav" ng-controller="WidgetCtrl">
+                <li ng-class="{ active: activeMenu=='Orders'?true:false}" ><a ng-click="activeMenu='Orders'" href="#/widgets">Orders</a></li>
+                <li ng-class="{ active: activeMenu=='Contact Us'?true:false}" ><a ng-click="activeMenu='Contact Us'" href="#/contactUs">Contact Us</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Gaurav Makkar<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a  href="#/widgets">Change Password</a></li>
+                        <li><a href="#/widgets">Logout</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
