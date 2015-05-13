@@ -55,4 +55,4 @@ this server is:
 npm start
 ```
 
-Now browse to the app at `localhost:8000/goWidgets`
+Now browse to the app at `localhost:8000/demo`
